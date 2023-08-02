@@ -1,0 +1,1112 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+div{
+    box-sizing: border-box;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .swiper-wrapper .bg-img2{
+    background-image: url('../image/Model-Y-D.jpg');
+}  */
+.swiper-wrapper .bg-img3{
+    background-image: url('../image/Model-3-D.jpg');
+} 
+.swiper-wrapper .bg-img4{
+    background-image: url('../image/Model-S-D.jpg');
+} 
+.swiper-wrapper .bg-img5{
+    background-image: url('../image/Model-X-D.jpg');
+} 
+.swiper-wrapper .bg-img6{
+    background-image: url('../image/SolarPanels_D.jpg');
+}
+.main-container{
+    position: fixed;
+    width: 100%;
+    height: 1%;
+    float: left;
+    z-index: 2;
+} 
+.main-container .bar-menu{
+    width: 100%;
+    height: 60px;
+    float: left;
+    z-index: 3;
+}
+.main-container .bar-menu .logo-box{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.main-container .bar-menu .logo-box img{
+    height: 12px;
+    margin-top: 23px;
+    margin-left: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.main-container .bar-menu .menu-box{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.main-container .bar-menu .info-box{
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding-right: 40px;
+}
+.main-container .bar-menu .menu-icon{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+.menu-box li{
+    display: inline-block;
+}
+.menu-box li a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 14px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.menu-box li a:hover{
+    background-color: gray;
+}
+.info-box li{
+    float: right;
+}
+.info-box li i{
+    margin: 15px 8px;
+    font-size: 19px;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.info-box li i:hover{
+    background-color: #F2F2F2;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.menu-icon li{
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.menu-icon li a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 14px 0;
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+.menu-icon li a:hover{
+    background-color: #F2F2F2;
+    color: rgba(0, 0, 0, 0.7);
+}
+.main-container h1{
+    position: absolute;
+    width: 500px;
+    font-size: 30px;
+    left: 50%;
+    top: 1500%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.815);
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.main-container h2{
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    text-align: center;
+    font-size: 14px;
+    top: 1950%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.815);
+    transform: translate(-50%,-50%);
+}
+
+
+
+.sub-menu-box{
+    width: 100%;
+    height: 10000%;
+    display: none;
+}
+.blur-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+}
+/* vehicle */
+.sub-menu-box .vehicle{
+    width: 100%;
+    aspect-ratio: 4/1;
+    padding-top: 6%;
+    display: none;
+    background-color: white;
+}
+.sub-menu-box .vehicle .car-contain{
+    width: 82%;
+    height: 90%;
+    margin: auto;
+}
+.vehicle .car-contain .car-box{
+    width:70%;
+    height: 100%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+.vehicle .car-contain .car-box .cars{
+    width: 24%;
+    height: 80%;
+    background-color: white;
+    float: left;
+    margin-top: 2%;
+
+}
+.car-contain .car-box .cars h3{
+    font-size: 0.8vw;
+    margin-top: 10%;
+    margin-left: 35%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.car-contain .car-box .cars h4{
+    font-size: 0.65vw;
+    margin-top: 2%;
+    margin-left: 32%;
+    word-spacing: 5px;
+    color: grey;
+    cursor: pointer;
+}
+.car-contain .car-box .cars h4 span{
+    text-decoration: underline;
+}
+.title h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    line-height: 2.1;
+    color: rgba(0, 0, 0, 0.7);
+}
+.title h5 span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.vehicle .car-contain .title{
+    width:30%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 50px;
+    float: left;
+    border-left: 2px solid #e7e7e7;
+}
+/* energy */
+.energy{
+    width: 100%;
+    aspect-ratio: 4.1/1;
+    display: none;
+    background-color: white;
+}
+.energy .energy-contain{
+    width: 82%;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.energy .energy-contain .energys{
+    width: 70%;
+    height: 70%;
+    float: left;
+}
+.energy .energy-contain .title{
+    width: 30%;
+    height: 70%;
+    float: left;
+    margin-top: 65px;
+}
+.energy .energy-contain .title .txt{
+    width: 100%;
+    height: 50%;
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    border-left: 2px solid #e7e7e7;
+}
+.energy .energy-contain .energys .energy-box{
+    width: 24%;
+    height: 90%;
+    float: left;
+    padding-top: 5.5%;
+    overflow: hidden;
+    margin-right: 1%;
+}
+.energy .energy-contain .energys .energy-box h3{
+    font-size: 0.8vw;
+    margin-top: 10%;
+    margin-left: 35%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.energy .energy-contain .energys .energy-box h4{
+    font-size: 0.65vw;
+    margin-top: 2%;
+    margin-left: 38%;
+    word-spacing: 10px;
+    color: grey;
+    cursor: pointer;
+}
+.energy .energy-contain .energys .energy-box h4 span{
+    text-decoration: underline;
+}
+.energy .energy-contain .energys .title h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    line-height: 2.1;
+    color: rgba(0, 0, 0, 0.7);
+}
+/* charging */
+.sub-menu-box .charging{
+    width: 100%;
+    aspect-ratio: 5/1;
+    display: none;
+    background-color: white;
+}
+.charging .charging-contain{
+    width: 80%;
+    height: 60%;
+    float: left;
+    margin-left: 10%;
+}
+.charging .charging-contain .pic-box{
+    width: 64%;
+    height: 100%;
+    float: left;
+}
+.charging .charging-contain .pic-box .pic{
+    width: 30%;
+    height: 100%;
+    float: right;
+    margin-left: 1%;
+}
+.charging .charging-contain .txt{
+    width: 36%;
+    height: 100%;
+    float: left;
+    border-left: 2px solid #e7e7e7;
+}
+.charging .charging-contain .pic h3{
+    font-size: 0.8vw;
+    margin-top: 16%;
+    margin-left: 35%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.charging .charging-contain .pic h4{
+    font-size: 0.65vw;
+    margin-top: 2%;
+    margin-left: 38%;
+    word-spacing: 10px;
+    color: grey;
+    cursor: pointer;
+}
+.charging .charging-contain h4 span{
+    text-decoration: underline;
+}
+.charging .charging-contain h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    line-height: 2.5;
+    margin-left: 50px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.charging .charging-contain h5 span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* discover */
+.sub-menu-box .discover{
+    width: 100%;
+    aspect-ratio : 4.3/1;
+    display: none;
+    background-color: white;
+    padding-top: 4%;
+}
+.discover .txt-box{
+    width: 80%;
+    aspect-ratio: 5/1;
+    padding-left: 15.5%;
+    margin-top: 0%;
+    margin: auto;
+}
+.sub-menu-box .discover .txt-box .txt{
+    width: 23%;
+    height: 100%;
+    float: left;
+    padding-left: 10px;
+}
+
+.sub-menu-box .discover .txt-box .txt h6{
+    font-size: 0.8vw;
+    margin-top: 40px;
+}
+.sub-menu-box .discover .txt-box .txt h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    line-height: 2.5;
+    color: rgba(0, 0, 0, 0.9);
+}
+.sub-menu-box .discover .txt-box .txt h5 span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* shop */
+.sub-menu-box .shop{
+    width: 100%;
+    aspect-ratio: 5.5/1;
+    display: none;
+    background-color: white;
+    padding-top: 3%;
+}
+.sub-menu-box .shop .shop-contain{
+    width: 70%;
+    aspect-ratio: 5/1;
+    margin: auto;
+    padding-top: 2%;
+    position: relative;
+}
+.sub-menu-box .shop .shop-contain h5{
+    position: absolute;
+    top: 70%;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.main-container .btn-box{
+    width: 270px;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 9000%;
+    transform: translate(-50%,-50%);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.main-container .btn-two{
+    width: 565px;
+    height: 40px;
+    float: left;
+    position: absolute;
+    top: 9000%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    right: 50%;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+.main-container .single-btn{
+    left: 50%;
+    color: white;
+    border: 3px solid white;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    line-height: 35px;
+}
+.main-container .left-btn{
+    width: 48%;
+    height: 40px;
+    float: left;
+    color: #4E4F54;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-container .right-btn{
+    width: 48%;
+    height: 40px;
+    float: right;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu2-contain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    display: none;
+}
+.menu2-contain .close-btn{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.menu2-contain .back-btn{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+.menu2-contain .title-menu2{
+    position: absolute;
+    text-align: center;
+    line-height: 133.5px;
+    font-size: 14px;
+    width: 220px;
+    height: 90px;
+    left: 50%;
+    right: 50%;
+    font-weight: 600;
+    color: #515358;
+    transform: translate(-50%,-50%);
+}
+.menu2-contain .close-btn i{
+    font-size: 20px;
+    color: #515358;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.menu2-contain .back-btn i{
+    font-size: 19px;
+    color: #515358;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.menu2-contain i.btn-menu:hover{
+    background-color: #e7edf1;
+    cursor: pointer;
+}
+.menu2-contain .contain-menu{
+    width: 100%;
+    height: 80%;
+    float: left;
+    margin-top: 80px;
+    display: none;
+}
+.menu2-contain .contain-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu2-contain .contain-menu ul li{
+    float: left;
+    width: 98%;
+    margin: 0.5% 1%;
+    border-radius: 5px;
+    position: relative;
+}
+.menu2-contain .contain-menu ul li a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 17.5px;
+    font-weight: 600;
+    color: #4f5052;
+}
+.menu2-contain .contain-menu ul li i{
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4f5052;
+}
+.menu2-contain .contain-menu ul li:hover{
+    background-color: #e7edf1;
+    cursor: pointer;
+}
+.menu2-contain .contain-menu ul li i#profile{
+    float: left;
+    display: block;
+    text-decoration: none;
+    margin-top: -1px;
+    margin-right: -25px;
+    margin-left: 1px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #4f5052;
+}
+.menu2-contain .contain-menu ul li i#global{
+    float: left;
+    display: block;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-right: -30px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #4f5052;
+}
+.menu2-contain .contain-menu ul li a#en{
+    margin-top: -8px;
+}
+p#lang{
+    font-size: 11px;
+    color: #4f5052;
+    position: absolute;
+    left: 49.5px;
+    top: 30px;
+}
+.menu2-contain .contain-vehicle{
+    width: 100%;
+    height: 90%;
+    float: left;
+    margin-top: 50px;
+    display: none;
+    /* background-color: red; */
+}
+.contain-vehicle .box-car{
+    width: 100%;
+    height: 55%;
+    float: left;
+}
+.contain-vehicle .box-car .box-cars{
+    width: 555px;
+    height: 100%;
+    transition: 0.5s;
+    margin: auto;
+}
+.contain-vehicle .box-car .box-cars .cars{
+    width: 185px;
+    height: 50%;
+    float: left;
+}
+.contain-vehicle .box-car .box-cars img{
+    width: 100%;
+    margin-top: 10px;
+}
+.contain-vehicle .box-car .box-cars h3{
+    font-size: 14px;
+    font-weight: 600;
+    left: 70px;
+    margin-left: 75px;
+    cursor: pointer;
+}
+.contain-vehicle .box-car .box-cars h4{
+    font-size: 12px;
+    margin-left: 68px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.contain-vehicle .box-car .box-cars h4 span:hover{
+    text-decoration: underline;
+}
+.box-title{
+    width: 90%;
+    height: 50%;
+    float: left;
+    margin-left: 5%;
+    border-top: 3px solid #e4e4e4;
+}
+.box-title h5{
+    line-height: 1.9;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #4f5052;
+    cursor: pointer;
+}
+.menu2-contain .contain-energy{
+    width: 100%;
+    height: 90%;
+    float: left;
+    margin-top: 50px;
+    display: none;
+}
+.contain-energy .box-energy{
+    width: 100%;
+    height: 55%;
+    float: left;
+}
+.contain-energy .box-energy .box-energys{
+    width: 555px;
+    height: 100%;
+    transition: 0.5s;
+    margin: auto;
+}
+.contain-energy .box-energy .box-energys .energy-pic{
+    width: 185px;
+    height: 50%;
+    float: left;
+}
+.box-energy .box-energys .energy-pic img{
+    width: 100%;
+    margin-top: 10px;
+}
+.box-energy .box-energys .energy-pic h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.box-energy .box-energys .energy-pic h4{
+    font-size: 12px;
+    margin-left: 51px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.box-energy .box-energys .energy-pic h4 span:hover{
+    text-decoration: underline;
+}
+.box-title{
+    width: 90%;
+    height: 50%;
+    float: left;
+    margin-left: 5%;
+    border-top: 3px solid #e4e4e4;
+}
+.box-energy .box-title h5{
+    line-height: 2.5;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.menu2-contain .contain-charging{
+    width: 100%;
+    height: 90%;
+    float: left;
+    margin-top: 50px;
+    display: none;
+}
+.contain-charging .box-charging{
+    width: 100%;
+    height: 60%;
+    float: left;
+}
+.contain-charging .box-charging .box-chargings{
+    width: 555px;
+    height: 50%;
+    transition: 0.5s;
+    margin: auto;
+}
+.contain-charging .box-charging .box-chargings .charging-pic{
+    width: 185px;
+    height: 50%;
+    float: left;
+}
+.contain-charging .box-charging .box-chargings .charging-pic img{
+    width: 100%;
+    margin-top: 10px;
+}
+.box-charging .box-chargings .charging-pic h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 41px;
+    cursor: pointer;
+}
+.box-charging .box-chargings .charging-pic h4{
+    font-size: 12px;
+    margin-left: 55px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.box-charging .box-chargings .charging-pic h4 span:hover{
+    text-decoration: underline;
+}
+.box-charging .box-title{
+    width: 90%;
+    height: 60%;
+    float: left;
+    margin-left: 5%;
+    border-top: 3px solid #e4e4e4;
+}
+.box-charging .box-title h5{
+    line-height: 2.5;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.menu2-contain .contain-discover{
+    width: 100%;
+    height: 80%;
+    float: left;
+    margin-top: 80px;
+    display: none;
+}
+.menu2-contain .contain-discover h5{
+    line-height: 2.5;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.menu2-contain .contain-discover h5 span{
+    padding: 1px 15px;
+    margin: 0.5% 2%;
+    width: 96%;
+    float: left;
+    border-radius: 5px;
+    color: #4f5052;
+    font-weight: 600;
+}
+.menu2-contain .contain-discover h5 span:hover{
+    background-color: #e5eff7;
+}
+.menu2-contain .contain-shop{
+    width: 100%;
+    height: 80%;
+    float: left;
+    margin-top: 20px;
+    display: none;
+}
+.menu2-contain .contain-shop .box-shop{
+    width: 840px;
+    height: 50%;
+    transition: 0.5s;
+    padding-top: 20px;
+    margin: auto;
+}
+.menu2-contain .contain-shop .box-shop .box-shops{
+    position: relative;
+    width: 280px;
+    height: 160px;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 1px;
+}
+.menu2-contain .contain-shop .box-shop .box-shops img{
+    height: 80%;
+    margin-left: 20px;
+}
+.menu2-contain .contain-shop .box-shop .box-shops h3{
+    position: absolute;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #424242;
+    top: 85%;
+}
+.menu2-contain .contain-shop .box-shop .box-shops:hover{
+    border: 2px solid #d9e9f7;
+    cursor: pointer;
+}
+.all-blur{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.popup-box{
+    position: fixed;
+    width: 300px;
+    height: 120px;
+    border-radius: 10px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    overflow: hidden;
+    display: none;
+    z-index: 2;
+}
+.popup-box i{
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+    color: #424242;
+    cursor: pointer;
+}
+.popup-box h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #424242;
+    line-height: 120px;
+    margin-left: 55px;
+}
+.popup-signin{
+    position: fixed;
+    width: 260px;
+    height: 250px;
+    border-radius: 10px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    overflow: hidden;
+    display: none;
+    z-index: 2;
+}
+.popup-signin i{
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+    color: #424242;
+    cursor: pointer;
+}
+.popup-signin h3{
+    font-size: 17px;
+    font-weight: 600;
+    color: #424242;
+    margin: 10px 15px;
+}
+.popup-signin h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #4E89F1;
+    margin: 10px 15px;
+}
+.popup-signin input{
+    width: 90%;
+    height: 33px;
+    margin-left: 14px;
+    margin-top: 10px;
+    border: 2px solid #424242;
+    border-radius: 3px;
+}
+.popup-signin .signin{
+    width: 65px;
+    height: 31px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #4E89F1;
+    cursor: pointer;
+    position: absolute;
+    left: 41%;
+    border-radius: 3px;
+    top: 82%;
+}
+.popup-signin .cancel{
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    background-color: #E4EEFB;
+    border: 2px solid rgb(231, 231, 231);
+    position: absolute;
+    font-size: 11px;
+    border-radius: 3px;
+    cursor: pointer;
+    left: 70%;
+    top: 82%;
+}
+/*Extra large devices (large destops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .menu2-contain{
+        display: none;
+    }
+
+}
+/*Large devices (destops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .main-container .bar-menu .logo-box{
+        width: 50%;
+    }
+    .main-container .bar-menu .menu-box{
+        display: none;
+    }
+    .main-container .bar-menu .info-box{
+        display: none;
+    }
+    .main-container .bar-menu .menu-icon{
+        display: block;
+    }
+    .contain-menu ul li i#row{
+        display: none;
+    }
+}
+/*Medium devices (tables, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .main-container .bar-menu .logo-box{
+        width: 50%;
+    }
+    .main-container .bar-menu .menu-box{
+        display: none;
+    }
+    .main-container .bar-menu .info-box{
+        display: none;
+    }
+    .main-container .bar-menu .menu-icon{
+        display: block;
+    }
+    .main-container .bar-menu .logo-box img{
+        margin-left: 40px;
+    }
+    .sub-menu-box{
+        display: none;
+    }
+    .contain-menu ul li i#row{
+        display: none;
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .main-container .bar-menu .logo-box{
+        width: 50%;
+    }
+    .main-container .bar-menu .menu-box{
+        display: none;
+    }
+    .main-container .bar-menu .info-box{
+        display: none;
+    }
+    .main-container .bar-menu .menu-icon{
+        display: block;
+    }
+    .main-container .bar-menu .logo-box img{
+        margin-left: 40px;
+    }
+    .sub-menu-box{
+        display: none;
+    }
+    .contain-vehicle .box-car .box-cars{
+        width: 370px;
+    }
+    .menu2-contain .contain-shop .box-shop{
+        width: 560px;
+        height: 50%;
+    }
+
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .main-container .bar-menu .logo-box{
+        width: 50%;
+    }
+    .main-container .bar-menu .menu-box{
+        display: none;
+    }
+    .main-container .bar-menu .info-box{
+        display: none;
+    }
+    .main-container .bar-menu .menu-icon{
+        display: block;
+    }
+    .main-container .bar-menu .logo-box img{
+        margin-left: 25px;
+    }
+    .sub-menu-box{
+        display: none;
+    }
+    .main-container .btn-two{
+        width: 350px;
+    }
+    .main-container .left-btn{
+        width: 49%;
+        font-size: 12px;
+    }
+    .main-container .right-btn{
+        width: 49%;
+        font-size: 12px;
+    }
+    .swiper-wrapper .bg-img2{
+        background-image: url('../image/Model\ -Y-Mobile.jpg');
+    } 
+    .swiper-wrapper .bg-img3{
+        background-image: url('../image/Model-3-Mobile.jpg');
+    } 
+    .swiper-wrapper .bg-img4{
+        background-image: url('../image/Model-S-mobile.jpg');
+    } 
+    .swiper-wrapper .bg-img5{
+        background-image: url('../image/Model-X-Mobile.jpg');
+    } 
+    .swiper-wrapper .bg-img6{
+        background-image: url('../image/SolarPanels-Mobile.jpg');
+    }
+    .contain-vehicle .box-car .box-cars{
+        width: 370px;
+    }
+    .contain-energy .box-energy .box-energys{
+        width: 370px;
+    }
+    .contain-charging .box-charging .box-chargings{
+        width: 370px;
+        height: 100%;
+    }
+    .menu2-contain .contain-shop .box-shop{
+        width: 280px;
+        height: 100%;
+    }
+}
